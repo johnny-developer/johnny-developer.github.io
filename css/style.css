@@ -2,14 +2,23 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Amiko', sans-serif;
+}
+:root {
+    --color_0: #3F3D56;
+    --color_1: #6C63FF;
+    --color_2: #2F2E41;
+    --color_3: #CCCCCC;
+    --color_4: #FFB9B9;
 }
 
 /* Navbar */
 .navbar {
     padding: 0.5rem;
     background-color: #f5f6f7;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 .navbar-nav {
     align-items: center;
@@ -31,7 +40,7 @@ body{
     padding: 3rem;
     justify-content: center; /* Centra verticalmente */
     align-items: center; /* Centra horizontalmente */
-    text-align: center; /* Para centrar el texto */
+    text-align: center; /* Para centrar el texto */    
 }
 
 .myclass-main h2 {
@@ -257,6 +266,106 @@ h1 {
     font-size: 0.9rem;
 }
 
+
+.contact .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contact .rectangulo {
+    margin-top: -5rem;
+    background-color: var(--color_1);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px var(--color_3);
+}
+
+.contact .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact .description {
+    color:  var(--color_3);
+    font-size: 1.2rem;
+}
+
+.contact button {
+    color:  var(--color_3);
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid var(--color_3);
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.contact button i {
+    color:  var(--color_3);
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover {
+    background-color:  var(--color_0);
+}
+
+footer {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.icons-sn a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid var(--color_3);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.icons-sn i {
+    color:  var(--color_3);
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+} 
+
+.icons-sn a:hover {
+    background-color: var(--color_3);
+}
+
+.icons-sn a:hover i {
+    color: var(--color_0);
+}
+
+.author {
+    font-size: 15px;
+    color: var(--color_4);
+    padding: 20px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 400px) {
@@ -291,4 +400,8 @@ h1 {
     .recomendacion-texto {
         font-size: 18px;
     }
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
 }
